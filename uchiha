@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Tường Lớp 12A1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FFCCCC;
+            color: green;
+            text-align: center;
+            padding: 40px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .article {
+            background-color: white;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .article img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .article h2 {
+            color: #4CAF50;
+            cursor: pointer;
+        }
+        .article p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Báo Tường Trường THPT Lê Ích Mộc </h1>
+        <p>Chào mừng bạn đến với trang báo tường của lớp 12A1- Nhóm Phạm Tuấn</p>
+    </header>
+
+    <div class="container">
+        <div class="article" onmouseover="highlightArticle(this)" onmouseout="resetArticle(this)">
+            <h2 onclick="showArticleDetails('Những điều chưa biết về ngày 8/3')">Những điều chưa biết về ngày 8/3</h2>
+            <img src="anh1.jfif" alt="Chuyến tham quan" style="width: 800px; height: 400px;">
+            <p>Theo đó, ngày 8/3 là ngày Quốc tế Phụ nữ đây là ngày tôn vinh những đóng góp, hy sinh của phụ nữ trên toàn thế giới trong mọi lĩnh vực: gia đình, xã hội, kinh tế, chính trị... Lễ kỷ niệm Ngày Phụ nữ tổ chức sớm nhất được tổ chức vào ngày 28 tháng 2 năm 1909 tại New York, Mỹ do Đảng Xã hội Mỹ tổ chức để tưởng niệm cuộc đình công năm 1908 của Hiệp hội Công nhân May mặc Quốc tế.Không có cuộc đình công nào vào ngày 8 tháng 3 năm đó. Đây cũng là dịp để nhắc nhớ về cuộc đấu tranh giành quyền bình đẳng giới, quyền lợi lao động và quyền tham gia xã hội của phụ nữ</p>
+        </div>
+
+        <div class="article" onmouseover="highlightArticle(this)" onmouseout="resetArticle(this)">
+            <h2 onclick="showArticleDetails('Ngày 8/3 của lớp 12A1')">Ngày 8/3 của lớp 12A1</h2>
+            <img src="anh2.jpg" alt="ảnh lớp">
+            <p>Ngày 8/3 là ngày tôn vinh phụ nữ do đó vào ngày 8/3 hằng năm các bạn nam lớp 12A1 lại tổ chức chào mừng ngày lễ này </p>
+        </div>
+
+        <div class="article" onmouseover="highlightArticle(this)" onmouseout="resetArticle(this)">
+            <h2 onclick="showArticleDetails('Cuộc Thi Vẽ Tranh Mừng Ngày Nhà 8/3')">Cuộc Thi Vẽ Tranh Mừng Ngày 8/3</h2>
+            <p>Cuộc thi vẽ tranh chào mừng Ngày 8/3 đã thu hút sự tham gia của rất nhiều học sinh trong lớp. Các tác phẩm không chỉ đẹp mà còn thể hiện lòng biết ơn sâu sắc của học sinh đối với các bạn nữ và cô giáo. Chúng ta hãy cùng chiêm ngưỡng những bức tranh tuyệt đẹp dưới đây</p>
+            <img src="anh4.png" alt="Cuộc thi vẽ tranh">
+        
+        </div>
+    </div>
+
+    <script>
+        // Hàm hiển thị thông báo khi nhấn vào tiêu đề bài viết
+        function showArticleDetails(title) {
+            alert("Bạn đang xem chi tiết bài viết: " + title);
+        }
+
+        // Hàm thay đổi màu nền của bài viết khi di chuột vào
+        function highlightArticle(article) {
+            article.style.backgroundColor = "#f0f8ff"; // Màu nền khi di chuột vào
+        }
+
+        // Hàm khôi phục màu nền của bài viết khi di chuột ra ngoài
+        function resetArticle(article) {
+            article.style.backgroundColor = "white"; // Khôi phục màu nền ban đầu
+        }
+    </script>
+</body>
+</html>
